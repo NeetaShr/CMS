@@ -1,0 +1,118 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    position:absolute;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav
+{
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0.2);
+}
+#p1
+{
+    color:rgb(9, 65, 117);
+    position: relative;
+    top: 20px;
+}
+.ent{
+    background-color: rgb(241, 161, 174);
+    width: 70%;
+    padding: 18px;
+    position: relative;
+    margin-top: 100px;
+    font-family: sans-serif;
+    color: white;
+}
+.search-container{
+    margin-top: 18px;
+    position: relative;
+}
+.search-container input{
+    width: 1065px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0.2);
+}
+.search-container i{
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    right: 20px;
+}
+#doctorname{
+    position: relative;
+    top: 70px;
+    height: 70vh;
+    width: 72vw;
+}
+#doctorline1{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    width: 72vw;
+}
+#doctor1{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    padding: 8px;
+    height: 100px;
+    width: 32vw;
+    border: 1px solid rgb(199, 198, 198);
+}
+
+#d1 h3{
+    color: rgb(91, 86, 86);
+    cursor: pointer;
+}
+#d1 h4{
+    color: gray;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#doctor1 img{
+    height: 80px;
+    width: 80px;
+}
+#doctor2{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    padding: 8px;
+    height: 100px;
+    width: 32vw;
+    border: 1px solid rgb(199, 198, 198);
+}
+#doctor2 img{
+    height: 80px;
+    width: 80px;
+}
+
+

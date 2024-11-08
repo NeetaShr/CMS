@@ -1,0 +1,119 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: inherit;
+}
+.menu .dashboard
+{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+
+}
+.menu
+{
+    position: fixed;
+    background-color:rgb(9, 65, 117);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu li{
+    font-size: 20px;
+    padding: 10px 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.menu li:hover
+{
+    background: white;
+    color: rgb(9, 65, 117);
+}
+.fa-house{
+    font-size:15px;
+    margin-right: 10px;
+}
+.fa-user-doctor{
+    font-size:15px;
+    margin-right: 10px;
+}
+.fa-calendar-check
+{
+    font-size:15px;
+    margin-right: 10px;
+}
+.container{
+    position:absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.nav
+{
+    position: fixed;
+    height: 60px;
+    width: 80vw;
+    background-color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0.2);
+}
+#p1
+{
+    color:rgb(9, 65, 117);
+    position: relative;
+    top: 20px;
+}
+.main{
+    position: relative;
+    top: 150px;
+    padding: 20px;
+    width: 100%;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 190px;
+}
+.card{
+    width: 25%;
+    margin: 10px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.main .cards h3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.main .card button{
+    background-color: rgb(9, 65, 117);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.main .card button:hover{
+    background: rgb(53, 167, 244);
+    color: white;
+}
+.main .card i{
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 5px;
+}
