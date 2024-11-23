@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: #f1f1f1;
+}
 .container{
     position:absolute;
     right: 0;
@@ -23,6 +26,7 @@
     font-size: 20px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0.2);
+    z-index: 2;
 }
 #p1
 {
@@ -31,7 +35,7 @@
     top: 20px;
 }
 .orthopedics{
-    background-color: rgb(241, 161, 174);
+    background-color: rgb(9, 65, 117);
     width: 70%;
     padding: 18px;
     position: relative;
@@ -81,6 +85,11 @@
     height: 100px;
     width: 32vw;
     border: 1px solid rgb(199, 198, 198);
+    transition: 0.3s;
+}
+#doctor1:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
 }
 
 #d1 h3{
@@ -109,10 +118,15 @@
     height: 100px;
     width: 32vw;
     border: 1px solid rgb(199, 198, 198);
+    transition: 0.3s;
 }
 #doctor2 img{
     height: 80px;
     width: 80px;
+}
+#doctor2:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
 }
 
 

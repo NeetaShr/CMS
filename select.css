@@ -112,6 +112,7 @@ a{
     margin-top: 15px;
     height: 225px;
 }
+
 .card{
     width: 280px;
     margin: 8px;
@@ -119,7 +120,13 @@ a{
     text-align: center;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+
 }
 .card img{
     height: 150px;

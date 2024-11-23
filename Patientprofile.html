@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Profile</title>
+        <link rel="stylesheet" href="patientprofile.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-header">
+                <img src="./images/patient.jpg" alt="Profile Picture" class="profile-img">
+                <h3>Patient Profile</h3>
+            </div>
+            
+            <form class="profile-form">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" value="Asim" disabled>
+    
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" value="Saru" disabled>
+    
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" value="Male" disabled>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="saruasim123@gmail.com" disabled>
+    
+                <label for="phone">Phone No:</label>
+                <input type="tel" id="phone" name="phone" value="9802269318" disabled>
+    
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="asim123" disabled>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="********" disabled>
+    
+                <button type="button" class="edit-btn" onclick="enableEditing()">Edit Profile</button>
+            </form>
+        </div>
+    
+        <script>
+            function enableEditing() {
+                // Enable all input fields for editing
+                const inputs = document.querySelectorAll('.profile-form input');
+                inputs.forEach(input => input.disabled = false);
+                document.querySelector('.edit-btn').style.display = 'none';
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
+
+</body>
+</html>
