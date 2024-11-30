@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.closebtn {
+    position: relative;
+    top: 0px;
+    left: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    background-color: rgb(233, 73, 73);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color:rgb(9, 65, 117);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  rgb(53, 167, 244);
+}
+
+
+</style>
+<body>
+    
+    <form id="bookingForm">
+        <h2>Booking Form</h2>
+        <label for="id">ID:</label>
+        <input type="text" id="id" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Gmail:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date" id="appointmentDate" required><br>
+
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time" id="appointmentTime" required><br>
+
+        <label for="fee">Consultation Fee:</label>
+        <input type="number" id="fee" required><br>
+
+        <button type="button">Confirm Booking</button>
+    </form>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="closebtn">&times;</span>
+            <h2>Confirm Your Booking</h2>
+            <p><strong>Name:</strong> <span id="confirmName"></span></p>
+            <p><strong>ID:</strong> <span id="confirmId"></span></p>
+            <p><strong>Gmail:</strong> <span id="confirmEmail"></span></p>
+            <p><strong>Appointment Date:</strong> <span id="confirmDate"></span></p>
+            <p><strong>Appointment Time:</strong> <span id="confirmTime"></span></p>
+            <p><strong>Consultation Fee:</strong> Rs<span id="confirmFee"></span></p>
+            <button>Confirm Booking</button>
+        </div>
+    </div>
+</body>
+</html>
