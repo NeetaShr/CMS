@@ -68,12 +68,12 @@ a{
     height: 60px;
     width: 80vw;
     background-color:white;
-    font-size: 20px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0.2);
 }
 #p1
 {
+    font-size: 20px;
     color:rgb(9, 65, 117);
     position: relative;
     top: 20px;
@@ -103,7 +103,6 @@ a{
 .main{
     position: relative;
     top: 0px;
-    padding: 10px;
     width: 100%;
 }
 .cards{

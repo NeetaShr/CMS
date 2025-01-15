@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  text-decoration: none;
 }
 
 body {
@@ -63,26 +63,37 @@ body {
 
 .sidebar ul {
   list-style-type: none;
+  line-height:40px;
+  
 }
 
-.sidebar ul li {
+
+.sidebar>ul li {
   font-size: 20px;
-    padding: 8px 8px;
-    color: white;
+    color: rgb(230, 239, 224);
 }
+.sidebar>ul>li:hover>ul{
+    display: block;
 
+}
 .sidebar ul li a {
-  color: white;
+  color: rgb(233, 222, 222);
   text-decoration: none;
   font-size: 18px;
   display: block;
 }
 
-.sidebar ul li :hover {
+.sidebar ul li a:hover{
+  display: block;
   background: white;
   color: rgb(9, 65, 117);
   padding-left: 10px;
   transition: 0.3s;
+}
+.sidebar>ul>li>ul{
+  position: relative;
+  top: 0px;
+  display: none;
 }
 
 .main-content {
@@ -101,7 +112,7 @@ body {
 
 .card {
   background-color: #fff;
-  padding: 20px;
+  padding: 18px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(25% - 20px);
@@ -110,6 +121,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition:0.3s;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #000;
 }
 
 .card h3 {
@@ -156,6 +172,10 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+a{
+  color: inherit;
+}
+
 </style>
 <body>
   <div class="dashboard-container">
@@ -171,9 +191,14 @@ body {
       
       <ul>
         <li><a href="./admindashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-        <li><a href="#"><i class="fas fa-user-md"></i> Doctor</a></li>
+        <li><a href="#"><i class="fas fa-user-md"></i>Doctor  <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        <ul>
+          <li><a href="#">Add Doctor</a></li>
+          <li><a href="#">View list</a></li>
+        </ul>
+      </li>
         <li><a href="#"><i class="fas fa-procedures"></i> Patient</a></li>
-        <li><a href="#"><i class="fas fa-calendar-check"></i> Appointment History</a></li>
+        <li><a href="./appointlist.html"><i class="fas fa-calendar-check"></i> Appointment History</a></li>
         <li><a href="#"><i class="fas fa-calendar-check"></i>Logout</a></li>
       </ul>
     </div>
@@ -185,16 +210,21 @@ body {
           <h3>Total Patients</h3>
           <p id="tpatient">200</p>
         </div>
+        
         <div class="card">
           <i class="fas fa-calendar-day"></i>
           <h3>Today’s Appointments</h3>
           <p id="tdappointments">15</p>
         </div>
+        
         <div class="card">
+          <a href="./appointlist.html">
           <i class="fas fa-calendar-alt"></i>
           <h3>Total Appointments</h3>
           <p id="tappointments">500</p>
+        </a>
         </div>
+        
         <div class="card">
           <i class="fas fa-user-md"></i>
           <h3>Total Doctors</h3>

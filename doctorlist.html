@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor list</title>
+    <style>
+        table {
+            width: 100%;
+            border: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+        .header {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .btn1 {
+            color: white;
+            background-color: red;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Total Entries: <span id="entryCount">1</span>
+    </div>
+    <table id="doctorTable">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Email address</th>
+                <th>Specialization</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Asim</td>
+                <td>asim@gmail.com</td>
+                <td>Cardiologist</td>
+                <td><button class="btn1">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
